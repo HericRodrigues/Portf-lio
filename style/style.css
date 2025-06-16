@@ -148,6 +148,27 @@ body {
     font-weight: 500;
 }
 
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.galeria_img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;    
+}
+
+.curriculo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-ter);
+    text-decoration: none;
+    padding: 5%;
+}
 
 @media (max-width: 1100px) {
     .cab {
@@ -179,6 +200,8 @@ body {
         height: auto; 
         border-radius: 16px;
     }
+
+    .
 }
 
 @media (max-width: 768px) {
@@ -198,5 +221,24 @@ body {
 
     .texto, .redes, .botao__mod, .rodape {
         font-size: 1rem;
+    }
+}
+@media (max-width: 320px) {
+    .cab__menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cab__menu__link {
+        font-size: 1.2rem;
+        padding: 10px 0;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 1.2rem;
+    }
+
+    .texto, .redes, .botao__mod, .rodape {
+        font-size: 0.9rem;
     }
 }
